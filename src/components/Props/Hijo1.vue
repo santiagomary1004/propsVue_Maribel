@@ -2,14 +2,29 @@
 import { ref } from 'vue'
 
 defineProps({
-  edad: String,
+  nombrecomp: String,
+  carrera: String,
+  grupo: String,
+  nc: String,
 })
 </script>
 
 <template>
-<h6>Soy el componente hijo 1</h6>
-<p>{{ edad }}</p>
+<h5><b>Alumno 1:</b></h5>
+<p>{{ nombrecomp }}</p>
+<p>{{ carrera }}</p>
+<p>{{ grupo }}</p>
+<p>{{ nc }}</p>
 </template>
 
-<style scoped></style>
+<style scoped>
+h5{
+font-family: Arial, Helvetica, sans-serif;
+color: brown;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+</style>
 
